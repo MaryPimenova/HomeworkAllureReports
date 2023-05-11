@@ -13,7 +13,7 @@ import static org.openqa.selenium.By.linkText;
 
 
 public class AllureReportsTest extends TestBase {
-    private static final String URL = "https://github.com";
+
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int ISSUE = 80;
 
@@ -23,7 +23,7 @@ public class AllureReportsTest extends TestBase {
     @DisplayName("Basic test with allure+selenide integration")
     public void testIssueSearchWithListener(){
 
-        open(URL);
+        open("/");
         $(".header-search-input").click();
         $(".header-search-input").sendKeys(REPOSITORY);
         $(".header-search-input").submit();
@@ -40,8 +40,8 @@ public class AllureReportsTest extends TestBase {
     @DisplayName("Test with lambda functions and steps")
     public void testLambdaStep(){
 
-        step("Opening the main page: " + URL, () -> {
-            open(URL);
+        step("Opening the main page: ", () -> {
+            open("/");
         });
         step("Searching for the repository: " + REPOSITORY, () -> {
             $(".header-search-input").click();
@@ -66,7 +66,7 @@ public class AllureReportsTest extends TestBase {
     public void testAnnotatedSteps(){
 
         WebSteps steps = new WebSteps();
-        steps.openMainPage(URL);
+        steps.openMainPage();
         steps.searchForRepository(REPOSITORY);
         steps.clickOnRepositoryLink( REPOSITORY);
         steps.openIssuesTab();

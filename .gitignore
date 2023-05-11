@@ -7,3 +7,7 @@
 /gradle/
 build/
 .idea/
+.idea
+settings.gradle
+gradlew
+gradlew.bat

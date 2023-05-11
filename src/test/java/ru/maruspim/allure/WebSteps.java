@@ -10,11 +10,13 @@ import static org.openqa.selenium.By.linkText;
 
 public class WebSteps {
     @Step("Opening the main page: ")
-    public void openMainPage(String url){
-        open(url);
+    public void openMainPage(){
+
+        open("/");
     }
     @Step("Searching for the repository: {repository}")
     public void searchForRepository(String repository) {
+
         $(".header-search-input").click();
         $(".header-search-input").sendKeys(repository);
         $(".header-search-input").submit();
