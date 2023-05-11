@@ -23,7 +23,6 @@ public class AllureReportsTest extends TestBase {
     @DisplayName("Basic test with allure+selenide integration")
     public void testIssueSearchWithListener(){
 
-
         open(URL);
         $(".header-search-input").click();
         $(".header-search-input").sendKeys(REPOSITORY);
@@ -40,7 +39,6 @@ public class AllureReportsTest extends TestBase {
     @Test
     @DisplayName("Test with lambda functions and steps")
     public void testLambdaStep(){
-
 
         step("Opening the main page: " + URL, () -> {
             open(URL);
