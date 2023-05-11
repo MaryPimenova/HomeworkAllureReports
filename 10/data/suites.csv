@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 11 12:19:11 GMT 2023","Thu May 11 12:19:14 GMT 2023","3174","","ru.maruspim.allure.AllureReportsTest","","ru.maruspim.allure.AllureReportsTest","testAnnotatedSteps","Test with annotated steps",""
+"passed","Thu May 11 12:19:14 GMT 2023","Thu May 11 12:19:18 GMT 2023","3556","","ru.maruspim.allure.AllureReportsTest","","ru.maruspim.allure.AllureReportsTest","testLambdaStep","Test with lambda functions and steps",""
+"passed","Thu May 11 12:19:02 GMT 2023","Thu May 11 12:19:11 GMT 2023","8620","","ru.maruspim.allure.AllureReportsTest","","ru.maruspim.allure.AllureReportsTest","testIssueSearchWithListener","Basic test with allure+selenide integration",""
